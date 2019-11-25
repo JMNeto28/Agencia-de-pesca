@@ -2,15 +2,18 @@ package pesca;
 
 public class NotaFiscal {
 	int pacote;
-	int aluguel;
+	double aluguel;
 	int translado;
 	
+	double Relatorio() {
+		
+		return pacote;
+	}
 	
-	
-	int Relatorio(Cadastro cads, String local) {
-		System.out.println("Nome: " + cads.nome + "\n");
+	void Dados(Pescadores cadas, String local)
+	{
+		System.out.println("Nome: " + cadas.nome + "\n");
 		System.out.println("Local escolhido: " + local + "\n");
-		return pacote + aluguel + translado;
 	}
 
 }
