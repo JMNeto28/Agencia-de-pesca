@@ -2,9 +2,9 @@ package pesca;
 
 import java.util.Scanner;
 
-public class Pacote {
+public class Pacote{
 	Scanner sc = new Scanner(System.in);
-	int numero, numero1;
+	int numero, numero1, valorr;
 	void Evip(Pescadores pescador, NotaFiscal nota) 
 	{
 		if (pescador.vip == 1)
@@ -16,18 +16,18 @@ public class Pacote {
 			if(numero == 1) 
 			{
 				System.out.println("Pacote luxo foi escolhido, no valor de R$1000,00");
-				nota.aluguel = nota.aluguel + 1000;
+				nota.pacote =  1000;
 		
 			}
-			if (numero == 2)
+			else if (numero == 2)
 			{
 				System.out.println("Pacote PRO foi escolhido, no valor de R$2000,00");
-				nota.aluguel = nota.aluguel + 2000;
+				nota.pacote = 2000;
 			}
-			if(numero == 3)
+			else
 			{
 				System.out.println("Pacote Barco Hotel foi escolhido, no valor de R$3000,00");
-				nota.aluguel = nota.aluguel + 3000;
+				nota.pacote = 3000;
 			}
 		}
 		else
@@ -38,16 +38,18 @@ public class Pacote {
 			if(numero1 == 1)
 			{
 				System.out.println("Pacote Básico foi escolhido, no valor de R$900,00");
-				nota.aluguel = nota.aluguel + 900;
+				nota.pacote = 900;
 			}
 			else
 			{
 				System.out.println("Pacote Moderado foi escolhido, no valor de R$970,00");
-				nota.aluguel = nota.aluguel + 970;
+				nota.pacote = 970;
 			}
 		}
 
 	}
-
+	
+	
+	
 	}
 
