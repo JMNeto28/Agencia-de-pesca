@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Pacote{
 	Scanner sc = new Scanner(System.in);
-	int numero, numero1, valorr;
+	int numero, numero1, valorr = 1;
 	void Evip(Pescadores pescador, NotaFiscal nota) 
 	{
-		if (pescador.vip == 1)
+		if (pescador.getVip() == 1)
 		{
 			System.out.print("Vemos que você é nosso sócio pescador, então temos opções especiais para você.");
 			System.out.println(" Existem 3 tipos de pacotes sócios pescadores:\n 1- Luxo no valor de R$ 1000,00\n 2- PRO  no valor de R$2000,00\n 3- Barco Hotel  no valor de R$3000,00\n");
