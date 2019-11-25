@@ -1,0 +1,11 @@
+package pesca;
+
+public class Carro {
+
+	public int ar;
+	public int direcaoeletrica;
+	public int alarme;
+	public int seguro;
+	public int segurototal;
+
+}
