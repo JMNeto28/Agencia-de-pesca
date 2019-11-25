@@ -5,10 +5,12 @@ public class NotaFiscal {
 	int aluguel;
 	int translado;
 	
-	void Relatorio() {
-		int conta;
-		conta = pacote + aluguel + translado;
-		System.out.println("" + conta);
+	
+	
+	int Relatorio(Cadastro cads, String local) {
+		System.out.println("Nome: " + cads.nome + "\n");
+		System.out.println("Local escolhido: " + local + "\n");
+		return pacote + aluguel + translado;
 	}
 
 }
