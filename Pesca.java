@@ -12,23 +12,26 @@ public class Pesca{
 		Cadastro cadastro = new Cadastro();
 		Aluguel aluga = new Aluguel();
 		Transfer trans = new Transfer();
-		int escolherFuncio = 0;
-		double aux = 0, somadou = 0;
-		String LocalEscolhido = null;
+		Carro carro = new Aluguel();
+		Carro carro1 = new Transfer();
+		int escolherFuncio = 0, e = 0;
+		double aux = 0, somadou = 0, valor = 0;
+		String LocalEscolhido = null, cupom;
 		Scanner sc = new Scanner(System.in);
 		
-		p1.regis1();
+		
 		// Menu para escolha da funcionalidade
-		while (escolherFuncio != 7)
+		while (escolherFuncio != 9)
 		{
-			System.out.println("Escolha a Funcionalidade: \n1- Cadastro\n2- Pacotes de viagem\n3- Escolher o mes da viagem e o local de pesca conforme o mês\n4- Rank de peixes pescados no lugar de escolha \n5- Aluguel de carro para a viagem\n6- Nota fiscal\n7- Fechar programa");
+			System.out.println("Escolha a Funcionalidade: \n1- Cadastro\n2- Pacotes de viagem\n3- Escolher o mes da viagem e o local de pesca conforme o mês\n4- Rank de peixes pescados no lugar de escolha \n5- Aluguel de carro para a viagem ou transfer aero/hotel\n6- Nota fiscal\n7- Inserir cupom de desconto\n8- Editar o cadastro completo\n9- Fechar o programa");
 			escolherFuncio = sc.nextInt();
 			sc.nextLine();
 			if(escolherFuncio == 1) 
 			{
 				System.out.println("Cadastro:");
+				p1.regis1();
 			}
-			if(escolherFuncio == 2) 
+			else if(escolherFuncio == 2) 
 			{
 				System.out.println("Você está na área de pacotes de viagem");
 				pacote.Evip(p1, nota);
@@ -45,8 +48,8 @@ public class Pesca{
 		
 			else if(escolherFuncio == 5) 
 			{
-				int e;
-				System.out.println("1- Aluguel do carro\n2- Transfer hotel/pesqueiro:");
+			
+				System.out.println("1- Aluguel do carro\n2- Transfer aeroporto/pesqueiro:");
 				e = sc.nextInt();
 				sc.nextLine();
 				if(e == 1) aux = aluga.AluguelCarro();
@@ -55,12 +58,33 @@ public class Pesca{
 			
 			else if(escolherFuncio == 6) 
 			{
-				Carro carro = new Aluguel();
-				Carro carro1 = new Transfer();
+				
 				System.out.println("Nota fiscal para o cliente:");
-				somadou = (nota.Relatorio()+ carro.somar(aux) + carro1.somar(aux));
+				if (e == 1) somadou = (nota.Relatorio()+ carro.somar(aux));
+				else somadou = (nota.Relatorio() + carro1.somar(aux));
 				nota.Dados(p1, LocalEscolhido);
-				System.out.printf("R$%.2f\n ",  somadou);
+				System.out.printf("Valor bruto: R$%.2f\n",  somadou);
+				System.out.printf("Valor com desconto: R$%.2f\n", valor);
+				
+			}
+			else if(escolherFuncio == 7) 
+			{
+				System.out.println("Inserir cupom de desconto\n");
+				cupom = sc.nextLine();
+				//if (e == 1) somadou = (nota.Relatorio()+ carro.somar(aux));
+				//else somadou = (nota.Relatorio() + carro1.somar(aux));
+				if(cupom.equals("DESCONTO"))
+				{
+					valor = pacote.desconto(p1, somadou);
+				}
+				else System.out.println("O cupom não é válido\n");
+			}
+			
+			else if(escolherFuncio == 8) 
+			{
+			
+				System.out.println("Você pode editar o cadastro.\n");
+				p1.regis1();
 			}
 
 			else
