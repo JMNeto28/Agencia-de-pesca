@@ -3,10 +3,10 @@ package pesca;
 public abstract class Carro {
 
 	private double ar;
-	public double direcaoEletrica;
-	public double alarme;
-	public double seguro;
-	public double seguroTotal;
+	private double direcaoEletrica;
+	private double alarme;
+	private double seguro;
+	private double seguroTotal;
 	
 	public void setAr(int r)
 	{
