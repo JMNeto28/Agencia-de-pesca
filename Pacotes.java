@@ -48,7 +48,14 @@ public class Pacote{
 		}
 
 	}
-	
+	double desconto(Pescadores pesc, double somadou)
+	{
+		if(pesc.getVip() == 1)
+		{
+			return somadou * 0.9;
+		}
+		else return somadou * 0.95;
+	}
 	
 	
 	}
