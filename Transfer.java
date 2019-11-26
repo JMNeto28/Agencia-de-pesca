@@ -14,7 +14,7 @@ public class Transfer extends Carro {
 	
 	double tran() {
 		System.out.println("Você pode escolher o que quer no carro que te levará do aeroporto até o hotel de pesca. E no final da sua estadia te levará do hotel até o aeroporto\n");
-		System.out.println("Menu de escolhas:\n1- Ar no valor de R$100\n2- Alarme no valor de R$150\n3- Direção Eletrica no valor de R$150\n4- Seguro no valor de R$200");
+		System.out.println("Menu de escolhas:\n1- Ar no valor de R$100\n2- Alarme no valor de R$150\n3- Direção Eletrica no valor de R$150\n4- Seguro no valor de R$200\n5- Finalizar ação");
 		while(x != 5)
 		{
 			x = sc.nextInt();
