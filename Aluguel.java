@@ -20,7 +20,7 @@ public class Aluguel extends Carro {
 			}
 			if (aux == 2)
 			{
-				System.out.println("O médio foi escolhido.");
+				System.out.println("O carro médio foi escolhido.");
 				this.setAr(300); 
 				this.setDirecaoEletrica(200);
 				this.setAlarme(400);
