@@ -13,8 +13,7 @@ public class LocaisPesca extends Cadastro{
 		if(this.mes == 1) 
 		{
 			System.out.println("No mes de janeiro existem duas opções de locais para pesca:\n1- Pantanal - MS\n2- Rio Araguaia");
-			escolha = sc.nextInt();
-			sc.nextLine();
+			escolha = TraExce.lerInt();
 			if(escolha == 1) local = "Pantanal";
 			else local = "Rio Araguaia";
 		}
@@ -22,8 +21,7 @@ public class LocaisPesca extends Cadastro{
 		else if(this.mes == 2) 
 		{
 			System.out.println("No mes de abril existem duas opções de locais para pesca:\n1- Foz do Iguaçu\n2- Litoral do Espírito Santo");
-			escolha = sc.nextInt();
-			sc.nextLine();
+			escolha = TraExce.lerInt();
 			if(escolha == 1) local = "Foz do Iguaçu";
 			else local = "Litoral do Espírito Santo";
 		}
@@ -31,8 +29,7 @@ public class LocaisPesca extends Cadastro{
 		else if(this.mes == 3) 
 		{
 			System.out.println("No mes de julho existe uma opções de locais para pesca:\n1- Rio Juma");
-			escolha = sc.nextInt();
-			sc.nextLine();
+			escolha = TraExce.lerInt();
 			if(escolha == 1) local = "Rio Juma";
 		}
 		
