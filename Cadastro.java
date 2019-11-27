@@ -19,6 +19,10 @@ public class Cadastro {
 	{
 		tipoPescador = t;
 	}
+	public int getTipoPescador() 
+	{
+		return tipoPescador;
+	}
 	
 	public void setVip(int r)
 	{
@@ -89,5 +93,8 @@ public class Cadastro {
 		}
 		
 	}
+
+	}
+
 	
-}
+
