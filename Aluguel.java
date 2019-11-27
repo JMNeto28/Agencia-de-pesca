@@ -12,7 +12,7 @@ public class Aluguel extends Carro {
 		
 			if (aux == 1)
 			{
-				System.out.println("O carro basico foi escolhido.");
+				//System.out.println("O carro basico foi escolhido.");
 				this.setAr(300); 
 				this.setDirecaoEletrica(200);
 				som = this.getAr() + this.getDirecaoEletrica();
@@ -20,16 +20,16 @@ public class Aluguel extends Carro {
 			}
 			if (aux == 2)
 			{
-				System.out.println("O carro médio foi escolhido.");
 				this.setAr(300); 
 				this.setDirecaoEletrica(200);
 				this.setAlarme(400);
 				this.setSeguro(150);
 				som = this.getAr() + this.getDirecaoEletrica() + this.getAlarme() + this.getSeguro();
+				//System.out.println("O carro médio foi escolhido.");
 			}
 			if (aux == 3)
 			{
-				System.out.println("O luxo basico foi escolhido.");
+				//System.out.println("O luxo foi escolhido.");
 				this.setAr(300); 
 				this.setDirecaoEletrica(200);
 				this.setAlarme(400);
@@ -43,8 +43,7 @@ public class Aluguel extends Carro {
 		int AluguelCarro(){
 			System.out.println("Escolha seu tipo de carro para o aluguel.\n1- Básico\n2- Médio\n3- Luxo");
 			
-			esc = sc.nextInt();
-			sc.nextLine();
+			esc = TraExce.lerInt();
 			if (esc == 1)
 			{
 				System.out.println("O carro basico foi escolhido.");
