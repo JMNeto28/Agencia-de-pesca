@@ -17,8 +17,8 @@ public class Transfer extends Carro {
 		System.out.println("Menu de escolhas:\n1- Ar no valor de R$100\n2- Alarme no valor de R$150\n3- Direção Eletrica no valor de R$150\n4- Seguro no valor de R$200\n5- Finalizar ação");
 		while(x != 5)
 		{
-			x = sc.nextInt();
-			sc.nextLine();
+			x = TraExce.lerInt();
+		
 			switch(x)
 			{
 			case 1:
