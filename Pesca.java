@@ -61,7 +61,7 @@ public class Pesca{
 				System.out.println("Nota fiscal para o cliente:");
 				if (e == 1) somadou = (nota.Relatorio()+ carro.somar(aux));
 				else somadou = (nota.Relatorio() + carro1.somar(aux));
-				nota.Dados(p1, LocalEscolhido);
+				nota.Dados(p1, LocalEscolhido, cadastro);
 				System.out.printf("Valor bruto: R$%.2f\n",  somadou);
 				System.out.printf("Valor com desconto: R$%.2f\n", valor);
 				
