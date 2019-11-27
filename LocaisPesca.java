@@ -9,8 +9,7 @@ public class LocaisPesca extends Cadastro{
 	
 	String escolherlocal(){
 		System.out.println("Temos 4 meses para escolha:\n1- Janeir0\n2- Abril\n3- Julho\n4- Dezembro (apenas pesca esportiva, por conta da Piracema)");
-		this.mes = sc.nextInt();
-		sc.nextLine();
+		this.mes = TraExce.lerInt();;
 		if(this.mes == 1) 
 		{
 			System.out.println("No mes de janeiro existem duas opções de locais para pesca:\n1- Pantanal - MS\n2- Rio Araguaia");
@@ -40,8 +39,7 @@ public class LocaisPesca extends Cadastro{
 		else
 		{
 			System.out.println("No mes de dezembro existe três opções de locais para pesca:\n1- Rio Negro\n2- Barra de Maricá\n3- Litoral paranaense");
-			escolha = sc.nextInt();
-			sc.nextLine();
+			escolha = TraExce.lerInt();
 			if(escolha == 1) local = "Rio Negro";
 			else if(escolha == 2) local = "Barra de Maricá";
 			else local = "Litoral paranaense";
