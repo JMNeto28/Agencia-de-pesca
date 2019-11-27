@@ -17,12 +17,12 @@ public class Pescadores extends Cadastro {
 		System.out.println("Digite o numero:");
 		this.numero = sc.nextLine();
 		System.out.println("Digite o tipo de pescador (em breve):");
-		tip = sc.nextInt();
-		sc.nextLine();
+		tip = TraExce.lerInt();
+	
 		this.setTipoPescador(tip);
 		System.out.println("Digite 1 se o cliente for VIP ou 2 se não for VIP:");
-		tip1 = sc.nextInt();
-		sc.nextLine();
+		tip1 = TraExce.lerInt();
+	
 		this.setVip(tip1);
 	}
 }
