@@ -24,8 +24,8 @@ public class Pesca{
 		while (escolherFuncio != 9)
 		{
 			System.out.println("Escolha a Funcionalidade: \n1- Cadastro\n2- Pacotes de viagem\n3- Escolher o mes da viagem e o local de pesca conforme o mês\n4- Rank de peixes pescados no lugar de escolha \n5- Aluguel de carro para a viagem ou transfer aero/hotel\n6- Nota fiscal\n7- Inserir cupom de desconto\n8- Editar o cadastro completo\n9- Fechar o programa");
-			escolherFuncio = sc.nextInt();
-			sc.nextLine();
+			escolherFuncio = TraExce.lerInt();
+			
 			if(escolherFuncio == 1) 
 			{
 				System.out.println("Cadastro:");
@@ -50,8 +50,7 @@ public class Pesca{
 			{
 			
 				System.out.println("1- Aluguel do carro\n2- Transfer aeroporto/pesqueiro:");
-				e = sc.nextInt();
-				sc.nextLine();
+				e = TraExce.lerInt();
 				if(e == 1) aux = aluga.AluguelCarro();
 				else aux = trans.tran();		
 			}
@@ -71,8 +70,8 @@ public class Pesca{
 			{
 				System.out.println("Inserir cupom de desconto\n");
 				cupom = sc.nextLine();
-				//if (e == 1) somadou = (nota.Relatorio()+ carro.somar(aux));
-				//else somadou = (nota.Relatorio() + carro1.somar(aux));
+				if (e == 1) somadou = (nota.Relatorio()+ carro.somar(aux));
+				else somadou = (nota.Relatorio() + carro1.somar(aux));
 				if(cupom.equals("DESCONTO"))
 				{
 					valor = pacote.desconto(p1, somadou);
