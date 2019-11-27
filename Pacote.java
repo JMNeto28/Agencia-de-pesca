@@ -11,8 +11,8 @@ public class Pacote{
 		{
 			System.out.print("Vemos que você é nosso sócio pescador, então temos opções especiais para você.");
 			System.out.println(" Existem 3 tipos de pacotes sócios pescadores:\n 1- Luxo no valor de R$ 1000,00\n 2- PRO  no valor de R$2000,00\n 3- Barco Hotel  no valor de R$3000,00\n");
-			numero = sc.nextInt();
-			sc.nextLine();
+			numero = TraExce.lerInt();
+			
 			if(numero == 1) 
 			{
 				System.out.println("Pacote luxo foi escolhido, no valor de R$1000,00");
@@ -33,8 +33,8 @@ public class Pacote{
 		else
 		{
 			System.out.println("Cliente para você temos 2 tipos de pacotes, são eles:\n1- Básica no valor R$900,00\n2- Moderada no valor de R$970,00\n");
-			numero1 = sc.nextInt();
-			sc.nextLine();
+			numero1 = TraExce.lerInt();
+	
 			if(numero1 == 1)
 			{
 				System.out.println("Pacote Básico foi escolhido, no valor de R$900,00");
