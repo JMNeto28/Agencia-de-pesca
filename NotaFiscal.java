@@ -1,6 +1,6 @@
 package pesca;
 
-import java.util.ArrayList;
+
 
 public class NotaFiscal {
 	int pacote;
