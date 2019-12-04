@@ -41,7 +41,7 @@ public class Aluguel extends Carro {
 
 		}
 		int AluguelCarro(){
-			System.out.println("Escolha seu tipo de carro para o aluguel.\n1- Básico\n2- Médio\n3- Luxo");
+			System.out.println("Escolha seu tipo de carro para o aluguel.\n1- Básico no valor de R$500.00\n2- Médio no valor de R$1050.00\n3- Luxo no valor de R$1400.00");
 			
 			esc = TraExce.lerInt();
 			if (esc == 1)
