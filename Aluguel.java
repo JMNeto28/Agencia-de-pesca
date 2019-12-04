@@ -51,7 +51,7 @@ public class Aluguel extends Carro {
 			}
 			else if (esc == 2)
 			{
-				System.out.println("O médio basico foi escolhido.");
+				System.out.println("O médio foi escolhido.");
 				
 			}
 			else System.out.println("O carro de luxo foi escolhido.");
