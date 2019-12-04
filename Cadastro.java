@@ -1,9 +1,5 @@
 package pesca;
 
-import javax.swing.JFormattedTextField;
-import javax.swing.JFrame;
-import javax.swing.JTextField;
-import javax.swing.text.MaskFormatter;
 
 public class Cadastro{
 	
@@ -16,6 +12,7 @@ public class Cadastro{
 	void rankpeixe(String loc){
 		if (loc == "Pantanal") 
 		{
+			System.out.println("" + loc + "\n");
 			tucunare = 1001;
 			robalo = 920;
 			traira = 1231;
@@ -23,6 +20,7 @@ public class Cadastro{
 		}
 		else if (loc == "Rio Araguaia") 
 		{
+			System.out.println("" + loc + "\n");
 			tucunare = 10023;
 			robalo = 7123;
 			traira = 8733;
@@ -30,6 +28,7 @@ public class Cadastro{
 		}
 		else if (loc == "Foz do Iguaçu") 
 		{
+			System.out.println("" + loc + "\n");
 			tucunare = 12023;
 			robalo = 9123;
 			traira = 8733;
@@ -37,6 +36,7 @@ public class Cadastro{
 		}
 		else if (loc == "Litoral do Espírito Santo") 
 		{
+			System.out.println("" + loc + "\n");
 			tucunare = 2023;
 			robalo = 10002;
 			traira = 733;
@@ -44,6 +44,7 @@ public class Cadastro{
 		}
 		else if (loc == "Rio Juma") 
 		{
+			System.out.println("" + loc + "\n");
 			tucunare = 423;
 			robalo = 1002;
 			traira = 7335;
@@ -51,6 +52,7 @@ public class Cadastro{
 		}
 		else if (loc == "Rio Negro") 
 		{
+			System.out.println("" + loc + "\n");
 			tucunare = 4230;
 			robalo = 0;
 			traira = 2335;
@@ -58,6 +60,7 @@ public class Cadastro{
 		}
 		else if (loc == "Barra de Maricá") 
 		{
+			System.out.println("" + loc + "\n");
 			tucunare = 0;
 			robalo = 11034;
 			traira = 2335;
@@ -65,6 +68,7 @@ public class Cadastro{
 		}
 		else
 		{
+			System.out.println("" + loc + "\n");
 			tucunare = 230;
 			robalo = 1034;
 			traira = 0;
