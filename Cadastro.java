@@ -1,37 +1,16 @@
 package pesca;
 
-public class Cadastro {
-	public String nome;
-	public String cpf;
-	public String endereço;
-	public String numero;
-	public int mes;
+import javax.swing.JFormattedTextField;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+import javax.swing.text.MaskFormatter;
+
+public class Cadastro{
 	
 	private int tucunare;
 	private int robalo;
 	private int traira;
 	
-	private int tipoPescador;
-	private int vip;
-	int conta;
-	
-	public void setTipoPescador(int t)
-	{
-		tipoPescador = t;
-	}
-	public int getTipoPescador() 
-	{
-		return tipoPescador;
-	}
-	
-	public void setVip(int r)
-	{
-		vip = r;
-	}
-	public int getVip()
-	{
-		return vip;
-	}
 	
 	
 	void rankpeixe(String loc){
