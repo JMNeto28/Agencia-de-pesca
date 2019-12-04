@@ -31,7 +31,7 @@ public class Pesca{
 			if(escolherFuncio == 1) 
 			{
 				System.out.println("-------------------------------------------------------------");
-				System.out.println("Cadastro0000:");
+				System.out.println("Cadastro:");
 				p1.regis1();
 				System.out.println("-------------------------------------------------------------");
 			}
