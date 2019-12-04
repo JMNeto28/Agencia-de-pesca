@@ -9,6 +9,7 @@ public class Transfer extends Carro {
 	
 	public double somar(double aux)
 	{
+		aux *= 1.1;
 		return aux;
 	}
 	
@@ -45,7 +46,9 @@ public class Transfer extends Carro {
 				soma = soma + this.getSeguro();
 				break;		
 			}
+			
 		}
+		System.out.println("Foi adicionado uma taxa de 10% para o motorista");
 		return soma;
 	}
 
