@@ -1,7 +1,11 @@
 package pesca;
 
+import java.text.ParseException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
+import javax.swing.JFormattedTextField;
+import javax.swing.text.MaskFormatter;
 
 public class TraExce {
 	
@@ -21,23 +25,17 @@ public class TraExce {
 				input.nextLine();
 			}
 		}
-		
+	
+	}
+	public static String lerTele(String phone) throws ParseException {
+
+		MaskFormatter phoneFormatter = new MaskFormatter("(##) #####-####");
+		JFormattedTextField txtPhone = new JFormattedTextField(phoneFormatter);
+		txtPhone.setText(phone);
+
+	
+	return txtPhone.getText();
 	}
 	
-	public static double lerDouble() {
-		input = new Scanner(System.in);
 		
-		while (true) {
-			try {
-				double valor = input.nextDouble();
-				return valor;
-				
-			} catch (InputMismatchException e) {
-				System.out.println("Erro: Entrada inválida.");
-			} finally {
-				input.nextLine();
-			}
-		}
-		
-	}
 }
