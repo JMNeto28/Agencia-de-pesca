@@ -1,10 +1,11 @@
 package pesca;
 
+import java.text.ParseException;
 import java.util.Scanner;
 
 public class Pesca{
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
 		Pescadores p1 = new Pescadores();
 		Pacote pacote = new Pacote();
 		NotaFiscal nota = new NotaFiscal();
@@ -61,7 +62,7 @@ public class Pesca{
 				System.out.println("Nota fiscal para o cliente:");
 				if (e == 1) somadou = (nota.Relatorio()+ carro.somar(aux));
 				else somadou = (nota.Relatorio() + carro1.somar(aux));
-				nota.Dados(p1, LocalEscolhido, cadastro);
+				nota.Dados(p1, LocalEscolhido);
 				System.out.printf("Valor bruto: R$%.2f\n",  somadou);
 				System.out.printf("Valor com desconto: R$%.2f\n", valor);
 				
