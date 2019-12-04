@@ -2,7 +2,7 @@ package pesca;
 
 import java.util.Scanner;
 
-public class LocaisPesca extends Cadastro{
+public class LocaisPesca extends Pescadores{
 	Scanner sc = new Scanner(System.in);
 	int escolha;
 	String local;
