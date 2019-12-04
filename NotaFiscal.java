@@ -13,12 +13,14 @@ public class NotaFiscal {
 		return pacote;
 	}
 	
-	void Dados(Pescadores cadas, String local, Cadastro cad)
+	void Dados(Pescadores cadas, String local)
 	{
 		System.out.println("Nome: " + cadas.nome + "\n");
-		System.out.println("Tipo de pescador:\n");
-		if(cad.getTipoPescador() == 1) System.out.println("Pescador esportivo.\n");
-		else if(cad.getTipoPescador() == 2) System.out.println("Pescador amador.\n");
+		System.out.println("CPF: " + cadas.cpf + "\n");
+		System.out.println("Numero Telefone: " + cadas.numFormatado + "\n");
+		System.out.print("Tipo de pescador: ");
+		if(cadas.getTipoPescador() == 1) System.out.println("Pescador esportivo.\n");
+		else if(cadas.getTipoPescador() == 2) System.out.println("Pescador amador.\n");
 		else System.out.println("Pescador profissional.\n");
 		System.out.println("Local escolhido: " + local + "\n");
 		
